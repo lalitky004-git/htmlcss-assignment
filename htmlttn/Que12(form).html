@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<head>	
+<title>
+	Form
+</title>
+  
+<style>
+    .maintitle {
+      color: #1B9596;
+      border-style: solid;
+      border-color: rgba(211, 205, 205, 0.5);
+     }
+     #menu a {
+    color: #1B9596;
+    cursor: pointer;
+    font-size: 15px;
+    text-transform: none;
+    margin-right: 12px;
+     }
+     .mainform {
+         border: 1px solid #b0b0b0;
+         width: 400px;
+         border-radius: 5px;
+         margin: auto;
+     }
+     .title1 {
+    background-color: #BCC3CA;
+        margin: 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+</style>
+</head>
+<body>
+   <div class="maintitle">
+		<div id="menu">
+			<a href="index.html">Home</a>
+              		<a href="index.html#help">Quick Help</a>
+					</div>
+			<h3>TO THE NEW</h3>
+		</div>
+        <div style="margin: auto; max-width: 715px; padding: 5px">
+    <div class="mainform">
+        <div class="title1" style="padding-bottom: 18px;font-size : 24px; color: #fff; ">Bug Report</div>
+        <div style="padding-bottom: 18px; padding-left: 20px;" class="formbody">
+            <form>
+                <label for="title">Title<span style="color: red;"> *</span></label>
+                <br>
+                <input type="text" required id="title" name="title" style="max-width : 550px;">
+                <br><br>
+                <label for="descr">Description<span style="color: red;"> *</span></label><br>
+                <input type="text" required id="descr" name="descr" style="max-width : 550px;">
+                <br><br>
+                <label for="OS">Operating System</label><br>
+                <select id="OS" name="OS" style="width : 300px; background-color: rgb(17, 196, 166);">
+                <option>Windows 8</option>
+                <option>Windows 7</option>
+                <option>Windows XP</option>
+                <option>Mac OS X</option>
+                <option>Google Chrome OS</option>
+                <option>Ubuntu</option>
+                <option>Fedora</option>
+                <option>Other</option>
+            </select><br><br>
+            <label for="prod">Product</label><br>
+            <select id="prod" name="prod" style="width: 300px;; background-color: rgb(17, 196, 166);">
+                <option>Formoid</option>
+                <option>Opera</option>
+                <option>Bootstrap</option>
+                <option>Safari</option>
+            </select><br><br>
+            <label for="ver">Version</label><br>
+            <input type="text" required id="ver" name="ver" style="width: 60px;"><br>
+            <br>
+            <label for="lisc">License</label><br>
+            <input type="radio" id="fr" name="lisce" value="fr">
+            <label for="fr">Free</label>
+            <input type="radio" id="buss" name="lisce" value="buss">
+            <label for="buss">Bussiness</label><br><br>
+            <label for="sever">Severity</label><br>
+                <select id="Sever" name="Sever" style="max-width : 550px;" class="form-control"><option>Critical</option>
+                <option>High</option>
+                <option>Medium</option>
+                <option>Low</option>
+                </select><br><br>
+            <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
